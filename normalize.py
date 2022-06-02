@@ -142,7 +142,6 @@ if __name__ == "__main__":
             in_range=(0, 2 ** img.metadata["attributes"].bitsPerComponentSignificant),
             out_range="dtype",
         )
-        print(data.min(), data.max())
         norm_model = models.Intensify(
             xy_norm=args.xy_norm,
             z_norm=args.z_norm,
@@ -168,5 +167,4 @@ if __name__ == "__main__":
             out_fn = ext_split[0] + f"_c={i}{ext_split[1]}"
         else:
             out_fn = args.out
-        print(normed.min(), normed.max())
         io.imsave(out_fn, normed)
