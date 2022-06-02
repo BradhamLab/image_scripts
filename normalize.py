@@ -1,4 +1,8 @@
-"""Script to z-normalize images"""
+"""
+Script to z-normalize images
+
+@author Dakota Y. Hawkins
+"""
 import argparse
 import os
 
