@@ -3,9 +3,9 @@ Scripts for easy image processing
 
 # Installation
 
-To run the scripts here, you will need to have Python and the necessary libraries installed by the `install.sh` script.
+To run the scripts, you will need to have Python and the necessary libraries installed by the `install.sh` script.
 
-Assuming you have Python installed on your computer, the simply run `bash install.sh` to install the required packages into your environment.
+Assuming you have Python installed on your computer, then simply run `bash install.sh` to install the required packages into your environment.
 
 ## Intensity Normalization
 
