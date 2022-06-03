@@ -142,7 +142,7 @@ if __name__ == "__main__":
     img = AICSImage(args.image)
     for i in args.channels:
         data = exposure.rescale_intensity(
-            img.get_image_data("ZYX", C=i)[args.z_start : args.z_stop],
+            img.get_image_data("ZYX", C=i)[args.z_start : args.z_stop, :, :],
             in_range=(0, 2 ** img.metadata["attributes"].bitsPerComponentSignificant),
             out_range="dtype",
         )
